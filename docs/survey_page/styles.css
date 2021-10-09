@@ -1,0 +1,198 @@
+/* INDEX 
+1. Body
+    1.1 Body Style
+    1.2 Header and Main General Style
+2. Header
+    2.1 Header Container
+    2.2 Header Style
+    2.3 Header Logos
+3. Form
+    3.1 Form Style
+    3.2 Info and Textarea Style
+    3.3 Input and Label Style 
+    3.4 Radio and Checkbox Style
+4. Footer
+5. Media Querys
+    5.1 MQ 850px
+
+/* =========
+    1. Body
+   ========= */
+
+/* 1.1 Body Style */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: rgba(238,238,238,1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 1.2 Header and Main General Style */
+header, main{
+    border: 1px solid black;
+    width: 50rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    background: linear-gradient(345deg, rgba(29,138,199,1) 0%, rgba(59,152,205,1) 16%, rgba(119,181,216,1) 28%, rgba(238,238,238,1) 42%);
+    box-sizing: border-box;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* ===========
+    2. Header
+   =========== */
+/* 2.1 Header Container */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2.2 Header Style */
+header p:last-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#title {
+    text-align: center;
+}
+#description {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* 2.3 Header Logos */
+.title_logo {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.header_logo {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+.header_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========
+    3. Form
+   ========== */
+
+/* 3.1 Form Style */
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 1.2rem 0 0rem;
+    text-decoration: underline;
+}
+
+/* 3.2 Info and Textarea Style */
+.personal_info, .select_item,
+.textarea_item {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.textarea_item textarea {
+    resize: none;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 3px black;
+}
+
+.btn {
+    margin-top: 0.5rem;
+    background-color: rgba(238,238,238,1);
+}
+
+.btn:hover, .btn:focus {
+    background-color: #f0460b;
+    color: rgba(238,238,238,1);
+    box-shadow: 0 0 4px #fff;
+}
+input:focus {
+    background-color: rgb(240,70,11,0.3);
+}
+
+/* 3.3 Input and Label Style */
+.personal_info input, .select_item select,
+.textarea_item input {
+    margin-bottom: 0.2rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 3px black;
+}
+.personal_info label {
+    padding: 0.375rem 0;
+    margin-bottom: 0.2rem;
+}
+
+/* 3.4 Radio and Checkbox Style */
+.select_item p, .radio_item p,
+.checkbox_item p, .textarea_item p {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.radio_item, .checkbox_item {
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.radio_item label, .checkbox_item label {
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+
+/* ===========
+    4. Footer
+   =========== */
+footer a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: rgba(238,238,238,1);
+}
+
+/* =================
+    5. Media Querys
+   ================= */
+/* 5.1 MQ 850px */
+
+@media screen and (max-width:850px) {
+    header, main {
+        width: 32rem;
+    }
+
+    .personal_info, .select_item,
+    .textarea_item {
+        width: 20rem;
+    }
+    
+    .radio_item, .checkbox_item {
+        width: 20rem;
+    }
+    
+    #description {
+        text-align: center;
+    }
+}
