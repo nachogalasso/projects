@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/docs/counter/style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <title>Passenger Counter</title>
+</head>
+<body>
+    <h1 id="welcome-el" class="title"></h1>
+    <main class="main-container">
+        <h2 class="ctr-title">Ingresos:</h2>
+        <!-- Our counter -->
+        <h2 id="count-el" class="ctr-number">0</h2>
+        
+        <!-- Button that´s allows count people -->
+        <button id="increment-btn" class="btn-plus">+</button>
+        <!-- Button that´s saves our count -->
+        <button id="save-btn" class="btn-save">Guardar Conteo</button>
+        <div id="entry-el">
+            <p id="save-el">Entradas Anteriores: </p>
+        </div>
+        <!-- Button that´s give the sum of all entries -->
+        <button id="sum-el" class="btn-sum">Total</button>
+        <p id="total-sum" class="ctr-total"></p>
+        <!-- Button to reset count  -->
+        <button id="reset-el" class="btn-reset">Reset</button>
+    </main>
+    <footer>
+        <p>The counter is from <a href="https://scrimba.com/learn/learnjavascript" title="Go to Scrimba" target="_blank">JavaScript Programming - Full Course</a>. Thanks to <a href="https://www.freecodecamp.org/" title="Go to Freecodecamp" target="_blank">Freecodecamp.org</a></p>
+        <p>The Glassmorphism if from <a href="https://twitter.com/Prathkum?s=20" target="_blank">@Prathkum</a> you can follow him on Twitter for good hints and tricks</p>
+    </footer>
+    <script src="/docs/counter/counter.js"></script>
+</body>
+</html>
